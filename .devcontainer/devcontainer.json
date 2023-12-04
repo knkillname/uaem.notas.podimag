@@ -1,0 +1,21 @@
+{
+	"name": "Python 3",
+	"image": "mcr.microsoft.com/devcontainers/python:1-3.11-bookworm",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"DavidAnson.vscode-markdownlint",
+				"MS-CEINTL.vscode-language-pack-es",
+				"ms-python.black-formatter",
+				"ms-python.mypy-type-checker",
+				"ms-python.pylint",
+				"ms-python.python",
+				"ms-toolsai.jupyter",
+				"streetsidesoftware.code-spell-checker-spanish",
+				"streetsidesoftware.code-spell-checker",
+				"yzhang.markdown-all-in-one",
+				"ms-python.isort"
+			]
+		}
+	}
+}

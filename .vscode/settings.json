@@ -1,0 +1,15 @@
+{
+    "[python]": {
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.rulers": [
+            72,
+            88
+        ],
+        "editor.wordBasedSuggestions": false
+    },
+    "editor.formatOnSave": true,
+    "editor.rulers": [
+        80
+    ],
+    "cSpell.language": "en,es"
+}
