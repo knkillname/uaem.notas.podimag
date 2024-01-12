@@ -17,5 +17,6 @@
 				"ms-python.isort"
 			]
 		}
-	}
+	},
+	"postCreateCommand": "make venv"
 }

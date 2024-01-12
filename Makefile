@@ -4,3 +4,6 @@ venv: .venv/bin/activate
 .venv/bin/activate: Pipfile
 	pipenv install --dev
 	touch $@
+
+clean:
+	git clean -Xdf
