@@ -18,5 +18,5 @@
 			]
 		}
 	},
-	"postCreateCommand": "make venv"
+	"postCreateCommand": "make systemdeps && make venv"
 }

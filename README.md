@@ -1,4 +1,6 @@
+
 # uaem.notas.prodimag
+
 [*Dr. Mario Abarca*][knkillname]
 
 Notas del curso *Procesamiento Digital de Imágenes* de la
