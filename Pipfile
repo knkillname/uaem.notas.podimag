@@ -21,10 +21,12 @@ tensorflow = "~=2.15"
 black = {extras = ["jupyter"], version = "*"}
 coverage = "*"
 isort = "*"
+jupyterlab = "*"
+line-profiler = "*"
 mypy = "*"
+notebook = "*"
 pylint = "*"
 rope = "*"
-line-profiler = "*"
 
 [requires]
 python_version = "3.11"

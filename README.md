@@ -83,6 +83,92 @@ usuarios de Ubuntu.
    code uaem.notas.prodimag
    ```
 
+## Preguntas frecuentes
+
+### ¿Cómo puedo abrir y ejecutar las notas?
+
+1. Abre el directorio del repositorio con *Visual Studio Code*.
+2. *Visual Studio Code* detectará que el directorio contiene un archivo
+   `devcontainer.json` y te preguntará si deseas abrir el directorio en un
+   contenedor. Haz clic en *Reopen in Container*.
+3. *Visual Studio Code* abrirá una nueva ventana con el directorio montado en un
+   contenedor de Docker. La *primera vez* que hagas esto, *Visual Studio Code*
+   descargará la imagen del contenedor, instalará las dependencias y abrirá un
+   terminal en el contenedor; este proceso puede tardar varios minutos.
+4. Abre el directorio `notas` y haz clic en el capítulo que desees abrir.
+
+### ¿Cómo puedo actualizar las notas?
+
+Suponiendo que ya tienes el repositorio clonado con *git* tal como se indica en
+[Inicio rápido](#inicio-rápido), puedes actualizar las notas mediante dos sopas:
+
+- **Sopa 1** (Interfaz gráfica):
+  1. Abre el directorio del repositorio con *Visual Studio Code*.
+  2. En la barra de estado encontrarás el botón de *Sincronizar cambios*; tiene
+   un aspecto similar a dos flechas circulares 🗘.
+  3. Haz clic en el botón y *Visual Studio Code* se encargará de actualizar el
+   repositorio.
+
+- **Sopa 2** (Línea de comandos):
+   1. Abre una terminal en el directorio del repositorio.
+   2. Ejecuta el siguiente comando:
+
+       ```bash
+       git pull
+       ```
+
+### ¿Cómo puedo ejecutar las notas sin *Visual Studio Code*?
+
+Si no deseas usar *Visual Studio Code* o si tienes problemas con el contenedor,
+puedes ejecutar las notas en tu sistema local. Para ello, a lo mínimo
+necesitarás tener instalado *Python* 3.11 con acceso a *pip*.
+
+1. Asegúrate de tener instalado *pipenv*. Si la sentencia `pipenv --version`
+   devuelve un error, instala *pipenv* con el siguiente comando:
+
+      ```bash
+      pip install --user pipenv
+      ```
+
+      Si este comando no funciona, prueba con
+      `python3 -m pip install --user pipenv`.
+2. Abre una terminal en el directorio `notas` y ejecuta el siguiente comando:
+
+   ```bash
+   pipenv install --dev
+   ```
+
+   Esta sentencia instalará todas las dependencias necesarias para ejecutar las
+   notas, incluyendo *Jupyter Lab*.
+3. Ejecuta el siguiente comando para abrir *Jupyter Lab*:
+
+   ```bash
+   pipenv run jupyter lab
+   ```
+
+Por favor nota que no me hago responsable de que el formato de las notas sea
+distinto al esperado si decides ejecutarlas en otro entorno que no sea el
+contenedor de *Visual Studio Code*.
+
+### ¿Cómo puedo contribuir?
+
+Si encuentras un error en las notas o si deseas agregar contenido, puedes
+hacerlo de la siguiente manera:
+
+1. Crea una rama local en tu repositorio. En Visual Studio Code, haz clic en el
+   icono de la rama en la barra de estado (usualmente dice `main`) y selecciona
+   *Create new branch*.
+2. Escribe un nombre descriptivo para la rama que refleje el cambio que
+   realizarás, por ejemplo *Nota sobre la transformada de Fourier*.
+3. Haz los cambios necesarios en las notas.
+4. Guarda cada cambio mediante un *commit* con un mensaje descriptivo, usando
+   las palabras *agregar*, *corregir*, o *eliminar* según sea el caso.
+5. Una vez que hayas terminado, haz clic en el icono de la rama en la barra de
+   estado y selecciona *Push*.
+6. Finalmente, en GitHub, haz clic en el botón *Compare & pull request* y sigue
+   las instrucciones para solicitar que tus cambios sean integrados en la rama
+   principal.
+
 <!-- Referencias -->
 [devcontainer]: https://code.visualstudio.com/docs/remote/containers
 [devcontainersext]: https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers
