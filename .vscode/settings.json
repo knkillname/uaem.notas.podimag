@@ -11,5 +11,9 @@
     "editor.rulers": [
         80
     ],
-    "cSpell.language": "en,es"
+    "cSpell.language": "en,es",
+    "cSpell.words": [
+        "getsizeof",
+        "quantile"
+    ]
 }
