@@ -13,7 +13,20 @@
     ],
     "cSpell.language": "en,es",
     "cSpell.words": [
+        "bmatrix",
+        "dtype",
+        "Facilitador",
         "getsizeof",
-        "quantile"
-    ]
+        "jupyter",
+        "lsmagic",
+        "multidimensionales",
+        "ndarray",
+        "permutación",
+        "quantile",
+        "quickref",
+        "sympy",
+        "tupla"
+    ],
+    "cSpell.spellCheckOnlyWorkspaceFiles": true,
+    "editor.snippets.codeActions.enabled": false
 }
