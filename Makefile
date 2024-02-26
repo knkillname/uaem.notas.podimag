@@ -5,7 +5,7 @@ systemdeps:
 
 venv: .venv/bin/activate
 .venv/bin/activate: Pipfile
-	pipenv install --dev
+	pipenv sync --dev
 	touch $@
 
 clean:
