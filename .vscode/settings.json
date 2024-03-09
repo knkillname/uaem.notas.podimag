@@ -27,6 +27,5 @@
         "sympy",
         "tupla"
     ],
-    "cSpell.spellCheckOnlyWorkspaceFiles": true,
-    "editor.snippets.codeActions.enabled": false
+    "cSpell.spellCheckOnlyWorkspaceFiles": true
 }
