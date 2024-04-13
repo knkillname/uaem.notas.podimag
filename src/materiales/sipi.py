@@ -12,6 +12,7 @@ descargar_sipi(volumen: str, destino: Path = Path("sipi")) -> None
 
 import enum
 from pathlib import Path
+from random import Random
 import tempfile
 import urllib.request
 import zipfile
@@ -48,3 +49,23 @@ def descargar_sipi(volumen: str | Volumen, destino: Path = Path("sipi")) -> None
             z.extractall(destino)
 
     print(f"Volumen {volumen} descargado y descomprimido en {destino}.")
+
+
+def ejemplo_sipi(rng=Random()) -> Path:
+    """Selecciona un archivo arbitrario de la base de datos miscelánea de la USC-SIPI."""
+    sipi = Path("sipi")
+    if not sipi.exists():
+        raise FileNotFoundError("No se encontró la base de datos de la USC-SIPI.")
+
+    archivos = [
+        archivo
+        for archivo in sipi.rglob("*")
+        if archivo.is_file() and archivo.suffix != ".zip"
+    ]
+
+    if not archivos:
+        raise FileNotFoundError(
+            "No se encontraron archivos en la base de datos de la USC-SIPI."
+        )
+
+    return rng.choice(archivos)

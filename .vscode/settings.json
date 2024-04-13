@@ -27,5 +27,14 @@
         "sympy",
         "tupla"
     ],
-    "cSpell.spellCheckOnlyWorkspaceFiles": true
+    "cSpell.spellCheckOnlyWorkspaceFiles": true,
+    "python.analysis.exclude": [
+        "**/*.png",
+        "**/*.mp4",
+        "**/*.jpg",
+        "**/*.jpeg",
+        "**/*.gif",
+        "**/*.tif"
+    ],
+    "python.defaultInterpreterPath": ".venv/bin/python3"
 }
