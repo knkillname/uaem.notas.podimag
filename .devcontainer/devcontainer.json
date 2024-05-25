@@ -18,5 +18,10 @@
 			]
 		}
 	},
-	"postCreateCommand": "make systemdeps && make venv"
+	"postCreateCommand": "make systemdeps && make venv",
+	"runArgs": [
+		"--privileged",
+		"--net=host",
+		"--device=/dev/video0:/dev/video0"
+	]
 }
