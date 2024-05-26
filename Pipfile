@@ -21,7 +21,7 @@ sympy = "~=1.12"
 tensorflow = "~=2.15"
 
 [dev-packages]
-black = {extras = ["jupyter"], version = "*"}
+black = {extras = ["jupyter"] }
 coverage = "*"
 ipywidgets = "*"
 isort = "*"
