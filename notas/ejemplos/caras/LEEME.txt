@@ -1,0 +1,3 @@
+10 caras elegidas aleatoriamente del conjunto de datos Human Faces.
+
+https://www.kaggle.com/datasets/ashwingupta3012/human-faces
